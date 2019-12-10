@@ -118,7 +118,7 @@ public class CameraTest {
 		assertEquals(1, intersectionsList3.size());
 		assertEquals(new Point(0, 0, 150), intersectionsList3.get(0).point);
 
-		// 0 cuts with same Triangle
+		// no cuts with same Triangle
 		Ray ray11 = camera.constructRayThroughPixel(3, 3, 0, 0, 100, 150, 150);
 		List<GeoPoint> intersectionsList4 = t1.findIntersections(ray11);
 		assertEquals(0, intersectionsList4.size());
